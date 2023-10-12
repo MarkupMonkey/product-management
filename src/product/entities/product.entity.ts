@@ -14,8 +14,8 @@ export class Product {
   })
   price: number;
 
-  @Column()
-  photo: string;
+  @Column('simple-array')
+  photos: string[];
 
   @Column({ length: 255 })
   description: string;

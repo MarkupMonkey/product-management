@@ -8,7 +8,7 @@ export class CreateProductDto {
   readonly price: number;
 
   @IsString()
-  readonly photo: string;
+  readonly photos: string[];
 
   @IsString()
   readonly description: string;
